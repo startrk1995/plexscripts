@@ -1,0 +1,26 @@
+## EDIT THESE SETTINGS ##
+PLEX_TOKEN = 'qRJAppUAUsjFCYwiDzmN'
+PLEX_URL = 'http://localhost:32400'
+TAUTULLI_APIKEY = 'd1f55a2aec6149199b8f93bdbfbebd92'  # Your Tautulli API key
+TAUTULLI_URL = 'http://localhost:8181/'  # Your Tautulli URL
+
+TIMEOUT = '1800'
+INTERVAL = '20'
+
+KILL_MESSAGE = '30 mins expired. Paused streams eat bandwidth. Please restart vi                                                                                                                                                             
+ewing when ready'
+
+USER_IGNORE = ('') # ('Username','User2')
+
+SUBJECT_TEXT = "Killed Paused Transcoded Stream."
+BODY_TEXT = "Killed {user}'s paused transcoded stream of {title}."
+
+NOTIFIER_ID = 1  # Notification agent ID for Tautulli
+# Find Notification agent ID here:
+# Tautulli Settings -> NOTIFICATION AGENTS -> :bell: Agent (NotifierID - {Descri                                                                                                                                                             
+ption)
+# NOTIFIER_ID = '' to disable notification
+
+sub_script = 'wait_kill_pause_notify_sub.py'
+##/EDIT THESE SETTINGS ##
+
